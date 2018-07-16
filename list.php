@@ -8,7 +8,9 @@
 	<?php
 		$i = count(scandir('test')) - 2;
 		if ($i > 0) {
-			echo "<a href='Test'" . $i .".json>Тест номер " . $i . "</a><br>";
+			for ($b=1; $b <= $i; $b++) { 
+				echo "<a href='Test'" . $b .".json>Тест номер " . $b . "</a><br>";
+			}
 		} else {
 			echo "Пока нет загруженных тестов";
 		}
